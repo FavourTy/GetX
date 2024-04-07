@@ -55,7 +55,7 @@ When using GetX in your Flutter projects, consider the following best practices:
 
 To further explore GetX, the following resources are highly recommended:
 - [GetX Official Documentation](https://pub.dev/packages/get)
-- [Flutter GetX - The Complete Guide by Suragch](https://fireship.io/lessons/flutter-getx-guide/)
+- [Flutter GetX - The Ultimate Guide to GetX](https://blog.logrocket.com/ultimate-guide-getx-state-management-flutter/)
 
 ## Contribution
 
