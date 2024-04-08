@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:routing/Screens/homePage.dart';
-import 'package:routing/Screens/second_screen.dart';
+import 'package:routing/routes.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -19,7 +18,7 @@ class FirstScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           MaterialButton(onPressed: (){
-            Get.to(()=> const SecondScreen());
+           Get.toNamed(Routes.secondScreen);
           },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),
@@ -27,7 +26,7 @@ class FirstScreen extends StatelessWidget {
           child: const Text("Next"),
           ),
           MaterialButton(onPressed: (){
-           Get.back(result: HomePage());
+           Get.offNamed(Routes.homePage);
           },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),

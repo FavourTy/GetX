@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:routing/routes.dart';
 
 class ThirdScree extends StatelessWidget {
   const ThirdScree({super.key});
@@ -14,7 +15,7 @@ class ThirdScree extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           MaterialButton(onPressed: (){
-            Get.off(()=> const ThirdScree());
+            Get.offNamed(Routes.thirdScreen);
           },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),
